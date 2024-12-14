@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="ClaroVideoJVSR.Views.MovieDetailView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <StackPanel Margin="20">
+            <Image Source="{Binding SelectedMovie.Poster}" Height="300" Width="200"/>
+            <TextBlock Text="{Binding SelectedMovie.Title}" FontSize="24" FontWeight="Bold" Margin="0,10"/>
+            <TextBlock Text="{Binding SelectedMovie.Year}" FontSize="18"/>
+            <TextBlock Text="{Binding SelectedMovie.Plot}" TextWrapping="Wrap" Margin="0,10"/>
+        </StackPanel>
+    </Grid>
+</Page>
